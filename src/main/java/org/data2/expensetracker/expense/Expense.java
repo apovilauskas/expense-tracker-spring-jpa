@@ -3,10 +3,7 @@ package org.data2.expensetracker.expense;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.math.BigDecimal;
@@ -14,6 +11,7 @@ import java.time.LocalDate;
 
 @Table(name = "expenses")
 @Entity
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
