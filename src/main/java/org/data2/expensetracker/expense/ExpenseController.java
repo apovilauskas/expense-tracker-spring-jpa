@@ -29,7 +29,7 @@ public class ExpenseController {
         model.addAttribute("categories", Category.values());
         model.addAttribute("expenses", expenseService.findAllExpenses());
         model.addAttribute("summary", expenseService.getSummary());
-        return "redirect:/expenses";
+        return "index";
     }
 
     @PostMapping("/expenses")
@@ -41,15 +41,11 @@ public class ExpenseController {
             model.addAttribute("categories", Category.values());
             model.addAttribute("expenses", expenseService.findAllExpenses());
             model.addAttribute("summary", expenseService.getSummary());
-            return "expenses";
+            return "index";
         }
         expenseService.save(expense);
         redirectAttributes.addFlashAttribute("message","Expense saved.");
         return "redirect:/expenses";
-
     }
-
-
-
 
 }

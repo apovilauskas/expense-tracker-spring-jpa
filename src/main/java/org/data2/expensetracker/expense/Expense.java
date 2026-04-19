@@ -1,6 +1,5 @@
 package org.data2.expensetracker.expense;
 
-
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import lombok.*;

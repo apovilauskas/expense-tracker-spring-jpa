@@ -22,5 +22,4 @@ public class ExpenseService {
     public Expense save(Expense expense){
         return expenseRepository.save(expense);
     }
-
 }
