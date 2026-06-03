@@ -33,6 +33,7 @@ public class Expense {
     @NotNull
     @Column(nullable = false, precision = 10, scale = 2)
     @DecimalMin(value = "0.01")
+    @Digits(integer = 8, fraction = 2)
     private BigDecimal cost;
 
     @NotNull
