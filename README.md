@@ -9,6 +9,6 @@ Users can add, view, categorize, and manage expenses through a clean server-rend
 - **Spring Web** – MVC architecture and routing
 - **Thymeleaf** – HTML template engine
 - **Spring Data JPA** – database access layer
-- **H2 Database** – in-memory database
+- **PostgreSQL Database** – secure database
 - **Lombok** – reduces boilerplate code
 - **Bean Validation** – input validation
